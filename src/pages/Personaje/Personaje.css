@@ -1,0 +1,109 @@
+.card-personaje {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-top: 50px;
+}
+.top-components {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+h2 {
+  margin: 40px;
+}
+.character-img {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.character-img img {
+  width: 214px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.character-info {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+h3 {
+  font-size: 20px;
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  font-weight: 100;
+  margin: 20px;
+}
+
+.character-house img {
+  width: 20%;
+}
+/* .character-info h3 {
+  color: white;
+  font-size: 20px;
+}
+.character-house {
+  display: flex;
+  flex-direction: column;
+}
+.character-aliance h3 {
+  font-size: 20px;
+}
+.character-aliance ul {
+  color: white;
+  list-style: none;
+  padding: 0;
+}
+.character-aliance li {
+  font-weight: 100;
+  margin: 20px;
+}
+.character-appearances ul {
+  color: white;
+  padding: 0;
+  list-style: none;
+}
+.character-appearances li {
+  margin: 20px;
+  font-weight: 100;
+}
+.character-parent h3 {
+  font-size: 20px;
+}
+.character-parent ul {
+  padding: 0;
+  list-style: none;
+}
+
+.character-parent li {
+  margin: 20px;
+  font-weight: 100;
+}
+.character-family ul {
+  padding: 0;
+  list-style: none;
+}
+.character-family li {
+  margin: 20px;
+  font-weight: 100;
+}
+.character-title ul {
+  padding: 0;
+  list-style: none;
+}
+.character-title li {
+  margin: 20px;
+  font-weight: 100;
+} */

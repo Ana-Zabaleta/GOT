@@ -1,0 +1,29 @@
+.translate-buttons {
+  display: flex;
+  gap: 20px;
+}
+.spanish-button,
+.english-button {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 65px;
+  height: 45px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.spanish-button {
+  background-image: url("../../../public/images/Idiomas/Spanish-button.png");
+}
+.spanish-button:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px white;
+}
+.english-button {
+  background-image: url("../../../public/images/Idiomas/English-button.png");
+}
+.english-button:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px lightgray;
+}

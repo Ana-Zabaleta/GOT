@@ -1,0 +1,37 @@
+.form-containerSearch {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.img-search {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  position: absolute;
+}
+
+input[type="text"] {
+  border: none;
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  outline: none;
+  background-color: black;
+  color: white;
+}
+
+input[type="text"]::placeholder {
+  color: #ccc;
+}
