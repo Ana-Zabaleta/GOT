@@ -12,10 +12,10 @@ i18n
     debug: false,
     resources: {
       en: {
-        translation: require("./locales/en.json"),
+        translation: require("../language/en"),
       },
       es: {
-        translation: require("./locales/es.json"),
+        translation: require("../language/en"),
       },
     },
   });

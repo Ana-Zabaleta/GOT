@@ -5,11 +5,19 @@
   margin-top: 50px;
 }
 .top-components {
+  margin: 0 auto;
+  width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin-top: 15px;
   margin-right: 10px;
+}
+.components-right {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 50%;
 }
 h2 {
   margin: 40px;

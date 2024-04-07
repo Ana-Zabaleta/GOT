@@ -5,8 +5,9 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Casas.scss";
 import Idiomas from "../../components/Idiomas/Idiomas";
+import Castillo from "../../components/Castillo/Castillo";
 import Busqueda from "../../components/Busqueda/Busqueda";
-
+import Navigation from "../../components/Navigation/Navigation";
 export default function Casas() {
   const [houses, setHouses] = useState([]);
   const [searchHouse, setSearchHouse] = useState("");
@@ -30,7 +31,10 @@ export default function Casas() {
     <>
       <div className="top-components">
         <Busqueda search={filterHouses} />
-        <Idiomas />
+        <div className="components-right">
+          <Castillo />
+          <Idiomas />
+        </div>
       </div>
       <SimpleBar className="bar" style={{ height: "590px" }}>
         {/* <div > */}
@@ -63,6 +67,9 @@ export default function Casas() {
         </div>
         {/* </div> */}
       </SimpleBar>
+      <div className="nav">
+        <Navigation />
+      </div>
     </>
   );
 }

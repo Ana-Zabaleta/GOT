@@ -2,9 +2,17 @@ body {
   background-color: black;
 }
 .top-components {
+  margin: 0 auto;
+  width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+.components-right {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 20%;
 }
 .simplebar-scrollbar {
   padding: 0;

@@ -11,9 +11,9 @@ export default function HomePage() {
         <div className="idiomas">
           <Idiomas></Idiomas>
         </div>
-      </div>
-      <div className="nav">
-        <Navigation />
+        <div className="nav">
+          <Navigation />
+        </div>
       </div>
     </>
   );

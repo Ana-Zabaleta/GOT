@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 import SimpleBar from "simplebar-react";
 import "simplebar-react/dist/simplebar.min.css";
 import Idiomas from "../../components/Idiomas/Idiomas";
-
+import Castillo from "../../components/Castillo/Castillo";
+import Navigation from "../../components/Navigation/Navigation";
 import { useEffect, useState } from "react";
 import Busqueda from "../../components/Busqueda/Busqueda";
 
@@ -32,7 +33,10 @@ export default function Personajes() {
     <>
       <div className="top-components">
         <Busqueda search={filterCharacters} />
-        <Idiomas />
+        <div className="components-right">
+          <Castillo />
+          <Idiomas />
+        </div>
       </div>
       <div className="container">
         <SimpleBar style={{ height: "600px" }}>
@@ -70,6 +74,9 @@ export default function Personajes() {
                 ))}
           </div>
         </SimpleBar>
+      </div>
+      <div className="nav">
+        <Navigation />
       </div>
     </>
   );

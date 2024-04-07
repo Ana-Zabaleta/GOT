@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Volver from "../../../components/Volver/Volver";
 import Idiomas from "../../../components/Idiomas/Idiomas";
+import Castillo from "../../../components/Castillo/Castillo";
 import { useTranslation } from "react-i18next";
 
 export default function Casa() {
@@ -25,7 +26,10 @@ export default function Casa() {
     <>
       <div className="top-components">
         <Volver />
-        <Idiomas />
+        <div className="components-right">
+          <Castillo />
+          <Idiomas />
+        </div>
       </div>
       {house && (
         <section className="house-sec">
