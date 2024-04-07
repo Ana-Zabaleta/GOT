@@ -16,7 +16,7 @@ export default function Volver() {
 
   return (
     <div className="back-button">
-      <Link to={prevUrl}>
+      <Link to={"/"}>
         <button> ← Volver</button>
       </Link>
     </div>

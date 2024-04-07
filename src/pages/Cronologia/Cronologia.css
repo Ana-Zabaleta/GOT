@@ -1,0 +1,39 @@
+.cronos {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.characters-age-left {
+  border-right: 1px solid white;
+}
+.character-age-left {
+  width: 300px;
+  margin-bottom: 220px;
+  border-bottom: 1px solid white;
+}
+.characters-age-right {
+  margin-top: 160px;
+}
+
+.character-age-right {
+  width: 300px;
+  margin-top: 65px;
+  margin-bottom: 40px;
+  border-top: 1px solid white;
+}
+.image-char {
+  width: 200px;
+  height: 200px;
+  object-position: top;
+  object-fit: cover;
+  overflow: hiden;
+  border-radius: 999px;
+}
+.btns {
+  width: 3%;
+  height: 7%;
+  border-radius: 999px solid white;
+}
+.letter {
+  margin-top: 50px;
+}

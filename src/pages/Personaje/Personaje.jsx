@@ -1,6 +1,8 @@
 import React from "react";
 import axios from "axios";
 import "./Personaje.css";
+import SimpleBar from "simplebar-react";
+import "simplebar-react/dist/simplebar.min.css";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Volver from "../../components/Volver/Volver";
@@ -72,11 +74,13 @@ export default function Personaje() {
             </div>
             <div className="character-appearances">
               <h3>{t("APARICIONES")}</h3>
-              <ul>
-                {character.episodes.map((episode, episodeIndex) => (
-                  <li key={episodeIndex}>{episode}</li>
-                ))}
-              </ul>
+              <SimpleBar style={{ height: "100px" }}>
+                <ul>
+                  {character.episodes.map((episode, episodeIndex) => (
+                    <li key={episodeIndex}>{episode}</li>
+                  ))}
+                </ul>
+              </SimpleBar>
             </div>
             <div className="character-parent">
               <h3>{t("FAMILIA")}</h3>
@@ -103,36 +107,6 @@ export default function Personaje() {
               </ul>
             </div>
           </div>
-          {/* <div className="character-info">
-            <h3>House: {character.house}</h3>
-            <h3>Alliances:</h3>
-            <ul>{character.alliances}</ul>
-            <h3>Episodes:</h3>
-            <ul>
-              {character.episodes.map((episode, episodeIndex) => (
-                <li key={episodeIndex}>{episode}</li>
-              ))}
-            </ul>
-            {console.log(character.episodes)}
-            <h3>Parents:</h3>
-            <ul>
-              {character.parents.map((parent, parentIndex) => (
-                <li key={parentIndex}>{parent}</li>
-              ))}
-            </ul>
-            <h3>Siblings:</h3>
-            <ul>
-              {character.siblings.map((sibling, siblingIndex) => (
-                <li key={siblingIndex}>{sibling}</li>
-              ))}
-            </ul>
-            <h3>Titles:</h3>
-            <ul>
-              {character.titles.map((title, titleIndex) => (
-                <li key={titleIndex}>{title}</li>
-              ))}
-            </ul>
-          </div> */}
         </div>
       )}
     </>
